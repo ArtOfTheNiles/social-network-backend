@@ -1,3 +1,6 @@
+import Thought from '../models/thought';
+import { Request, Response } from 'express';
+
 // GET all thoughts
 // GET thought by _id
 // POST a new thought -- attach user id to thought
