@@ -6,7 +6,6 @@ This is an HTTP accessible Server API for a hypothetical Social Media startup
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [Credits](#credits)
@@ -26,7 +25,9 @@ This is an HTTP accessible Server API for a hypothetical Social Media startup
 
 ## Usage
 
-Refer to the following video for instructions on how to use the program:
+This is a REST API, so send HTTP requests to send and receive data.
+
+Refer to the following video for detailed instructions: `Coming Soon!`
 
 
 
