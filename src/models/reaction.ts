@@ -7,7 +7,7 @@ interface IReaction extends Document {
   createdAt: Date;
 }
 
-const reactionSchema = new Schema<IReaction>({
+export const reactionSchema = new Schema<IReaction>({
   reactionId: {
     type: Schema.Types.ObjectId,
     default: () => new Types.ObjectId(),

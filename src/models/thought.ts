@@ -1,5 +1,5 @@
 import { Schema, model, Document } from 'mongoose';
-import Reaction from './reaction';
+import { reactionSchema } from './reaction';
 
 interface IThought extends Document {
   thoughtText: string;
@@ -23,7 +23,7 @@ const thoughtSchema = new Schema<IThought>({
     type: String,
     required: true,
   },
-  reactions: [Reaction],
+  reactions: [reactionSchema],
 },{
   toJSON: { virtuals: true },
   id: false,
