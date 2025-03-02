@@ -44,7 +44,7 @@ export const getUserById = async (req: Request, res: Response) => {
 export const updateUser = async (req: Request, res: Response) => {
   const { userId } = req.params;
   try {
-    const updatedUser = await User.findByIdAndUpdate(userId, req.body);
+    const updatedUser = await User.findByIdAndUpdate(userId, req.body, { new: true });
     if (!updatedUser) {
       return res.status(404).json({ message: 'User not found' });
     }
@@ -67,8 +67,7 @@ export const deleteUser = async (req: Request, res: Response) => {
 
 // POST add a friend to user friend list
 export const addFriend = async (req: Request, res: Response) => {
-  const { userId } = req.params;
-  const { friendId } = req.body;
+  const { userId, friendId } = req.params;
   try {
     const user = await User.findByIdAndUpdate(userId, { $addToSet: { friends: friendId } }, { new: true });
     if (!user) {
@@ -82,8 +81,7 @@ export const addFriend = async (req: Request, res: Response) => {
 
 // DELETE remove a friend from user friend list
 export const removeFriend = async (req: Request, res: Response) => {
-  const { userId } = req.params;
-  const { friendId } = req.body;
+  const { userId, friendId } = req.params;
   try {
     const user = await User.findByIdAndUpdate(userId, { $pull: { friends: friendId } }, { new: true });
     if (!user) {
