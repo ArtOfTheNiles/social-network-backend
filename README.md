@@ -17,7 +17,7 @@ This is an HTTP accessible Server API for a hypothetical Social Media startup
 
 ## Installation
 
-* Installation information is incoming, please be patient while the project gets underway.
+* Use an HTTP request platform like Insomnia or Postman to interact with this API.
 
 
 
@@ -27,8 +27,8 @@ This is an HTTP accessible Server API for a hypothetical Social Media startup
 
 This is a REST API, so send HTTP requests to send and receive data.
 
-Refer to the following video for detailed instructions: [Vimeo](https://vimeo.com/1061888000?share=copy#t=0)
-<div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1061888000?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="2" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="NB_SocialMediaAPI"></iframe></div>
+Refer to the following video for more detailed : [Vimeo](https://vimeo.com/1061888000?share=copy#t=0)
+
 
 
 
